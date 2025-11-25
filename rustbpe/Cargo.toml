@@ -1,0 +1,15 @@
+[package]
+name = "rustbpe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dary_heap = "0.3" # fast heap for priority queue
+indexmap = "2.2" # hash map that preserves insertion order
+fancy-regex = "0.16.1" # regex compatible w/ gpt-4 patterns
+log = "0.4.28"
+pyo3 = { version = "0.23.3", features = ["extension-module"] } # lets you write python modules in rust
+pyo3-log = "0.12.4" # bridge between rust's log crate and python logging
+ahash = "0.8.12" # fast hashing
+rayon = "1.11.0" # parallel processing
+compact_str = "0.9.0" # memory efficient strings
